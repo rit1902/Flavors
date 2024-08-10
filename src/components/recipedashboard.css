@@ -1,0 +1,256 @@
+/* General Layout */
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #e0e0e0, #b0bec5);
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #263238;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar li:hover {
+  background-color: #37474f;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Make links fill the list item */
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar a:hover {
+  background-color: #37474f; /* Maintain hover color on link */
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header-dash {
+  margin-top: 20px;
+  background-color: #37474f;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 250px); /* Adjust width to match content area */
+}
+
+.add-recipe-btn {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-recipe-btn:hover {
+  background-color: #1976d2;
+}
+
+/* Search Bar */
+.search-bar {
+  margin: 10px 20px; /* Adjusted margin to align with the header's padding */
+  width: calc(100% - 40px); /* Adjust width to fit within content area considering the margin */
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Recipe List */
+.recipe-list {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-right: 10px;
+  overflow-y: auto;
+}
+
+/* Recipe List Heading */
+.recipe-list h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Recipe Cards */
+.recipe-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center cards horizontally */
+}
+
+.recipe-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: calc(33% - 20px); /* Three cards per row */
+  max-width: 300px; /* Set max-width to prevent overcrowding */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 16px;
+}
+
+/* Recipe Form */
+.recipe-form {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.recipe-form h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.recipe-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-form label {
+  margin-bottom: 10px;
+}
+
+.recipe-form input,
+.recipe-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.recipe-form button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-form button:hover {
+  background-color: #1976d2;
+}
+
+/* Recipe Detail Buttons */
+.edit-recipe-btn,
+.delete-recipe-btn {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.edit-recipe-btn:hover,
+.delete-recipe-btn:hover {
+  background-color: #1976d2;
+}
+
+.delete-recipe-btn {
+  background-color: #f44336;
+}
+
+.delete-recipe-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Parallax Effect */
+.parallax {
+  background-image: url('https://www.pexels.com/photo/green-yellow-brown-and-blue-stained-glass-942322/'); /* Replace with your image */
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

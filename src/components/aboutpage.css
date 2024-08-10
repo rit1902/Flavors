@@ -1,0 +1,72 @@
+body {
+    background-color: #000000;
+    color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-page {
+    text-align: center;
+  }
+  
+  .about-header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+  }
+  
+  .about-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .about-content {
+    padding: 40px 20px;
+  }
+  
+  .mission, .vision, .team {
+    margin-bottom: 40px;
+  }
+  
+  .mission img, .vision img, .team img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mission-text, .vision-text {
+    background: #1f1f1f;
+    padding: 20px;
+    margin-top: -20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 20px;
+  }
+  
+  .mission h2, .vision h2, .team h2 {
+    font-size: 2em;
+    margin-top: 0;
+  }
+  
+  .mission p, .vision p, .team p {
+    font-size: 1.2em;
+    color: #ffcfcf;
+  }
+  
+  /* .about-footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .about-footer p {
+    margin: 0;
+    font-size: 1em;
+  } */
+
+  
