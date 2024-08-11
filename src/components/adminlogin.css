@@ -15,15 +15,16 @@
     Form css
 ***************/
 .admin-form {
-    width: 500px; /* Increased width for a wider form */
-    padding: 30px;
+     width: 500px; 
+    padding: 10px 30px; 
     position: absolute;
-    top: 50%;
-    left: 50%;
+    /* top: 50%; */
+    /* bottom: -50%; */
+    left: 50%; 
     transform: translate(-50%, -50%);
     background: rgba(25, 25, 25, 0.8); /* Slight transparency */
     border: none;
-    border-radius: 15px; /* Reduced border-radius for a squarer look */
+    border-radius: 20px; /* Reduced border-radius for a squarer look */
     text-align: center;
 }
 
@@ -38,7 +39,7 @@
     border: 2px solid #0097e6;
     background: none;
     display: block;
-    margin: 15px auto;
+    margin: 10px auto; /* Reduced margin to decrease form height */
     padding: 12px 40px;
     width: 300px; /* Adjusted width of input fields */
     outline: none;
