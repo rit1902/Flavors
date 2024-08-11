@@ -368,7 +368,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={paneertikka} alt="paneertikka" />
                   <div className="card-content">
+                    <Link to='/pannertikka'>
                     <h2>Paneer Tikka</h2>
+                    </Link>
                     <p>An Indian appetizer made from chunks of paneer marinated in spices and yogurt, then grilled or baked until charred and served hot.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-4" />
@@ -424,8 +426,10 @@ const HomePage = () => {
                 </div>
                 <div className="card">
                   <img src={hyderabadibiriyany} alt="hyderabadibiriyany" />
-                  <div className="card-content">  
+                  <div className="card-content"> 
+                    <Link to='/biriyani'>
                     <h2>Hyderabadi Biriyani</h2>
+                    </Link> 
                     <p>A flavorful, aromatic Indian rice dish made with basmati rice, marinated meat (often chicken or lamb), and a blend of spices, cooked together in a sealed pot.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-5" />
@@ -482,7 +486,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={thandai} alt="thandai" />
                   <div className="card-content">
+                    <Link to='/thandai'>
                     <h2>Thandai</h2>
+                    </Link>
                     <p>A traditional Indian cold drink prepared with a mixture of almonds, fennel seeds, rose petals, pepper, cardamom, saffron, milk, and sugar, often enjoyed during Holi.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-6" />
@@ -547,7 +553,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={soba} alt="soba" />
                   <div className="card-content">
+                    <Link to='/soba'>
                     <h2>Soba</h2>
+                    </Link>
                     <p> Thin Japanese noodles made from buckwheat flour, served either chilled with a dipping sauce or in hot broth as a noodle soup.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-7" />
@@ -604,7 +612,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={donburi} alt="donburi" />
                   <div className="card-content">
+                    <Link to='/donburi'>
                     <h2>Donburi</h2>
+                    </Link>
                     <p>A Japanese rice bowl dish topped with various ingredients such as meat, fish, vegetables, and a simmered sauce and served hot.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-8" />
@@ -661,7 +671,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={dorayaki} alt="dorayaki" />
                   <div className="card-content">
+                    <Link to='/dorayaki'>
                     <h2>Dorayaki</h2>
+                    </Link>
                     <p>A Japanese confection consisting of two small pancake-like cakes filled with sweet red bean paste, The cakes are usually golden brown, often enjoyed with tea.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-9" />
@@ -726,7 +738,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={hargow} alt="hargow" />
                   <div className="card-content">
+                    <Link to='/hargow'>
                     <h2>Har Gow</h2>
+                    </Link>
                     <p>Chinese dim sum dumplings with a translucent wrapper, filled with a mixture of shrimp, bamboo shoots, and seasonings.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-10" />
@@ -783,7 +797,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={kungpaochicken} alt="kungpaochicken" />
                   <div className="card-content">
+                    <Link to='kungpaochicken'>
                     <h2>Kung Pao Chicken</h2>
+                    </Link>
                     <p> A spicy, stir-fried Chinese dish made with chicken, peanuts, vegetables, and chili peppers, flavored with Sichuan peppercorns.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-11" />
@@ -840,7 +856,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={jasminetea} alt="Jasminetea" />
                   <div className="card-content">
+                    <Link to='/jasmintea'>
                     <h2>Jasmine tea</h2>
+                    </Link>
                     <p>A fragrant Chinese tea scented with the aroma of jasmine blossoms, often enjoyed for its soothing and floral flavor, Jasmine Tea is appreciated for its calming effects.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-12" />
@@ -905,7 +923,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={arancini} alt="arancini" />
                   <div className="card-content">
+                    <Link to='/arancini'>
                     <h2>Arancini</h2>
+                    </Link>
                     <p>Italian rice balls that are coated with breadcrumbs and deep-fried, typically filled with ragù, mozzarella, and peas.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-13" />
@@ -962,7 +982,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={branzinnoalforno} alt="branzinnoalforno" />
                   <div className="card-content">
+                    <Link to='/branzinnoalforno'>
                     <h2>Branzinno al Forno</h2>
+                    </Link>
                     <p> An Italian dish featuring oven-roasted Mediterranean sea bass, often flavored with herbs, lemon, and olive oil.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-14" />
@@ -1019,7 +1041,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={tiramisu} alt="Tiramisu" />
                   <div className="card-content">
+                    <Link to='/tiramisu'>
                     <h2>Tiramisu</h2>
+                    </Link>
                     <p>A popular Italian dessert made of layers of coffee-soaked ladyfingers, mascarpone cheese, eggs, sugar, and cocoa powder.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-15" />
@@ -1084,7 +1108,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={tteokbokki} alt="tteokbokki" />
                   <div className="card-content">
+                    <Link to='/tteokbokki'>
                     <h2>Tteokbokki</h2>
+                    </Link>
                     <p>A popular Korean street food made with chewy rice cakes cooked in a spicy and sweet gochujang (Korean chili paste) sauce.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-16" />
@@ -1141,7 +1167,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={dakgalbi} alt="DakGalbi" />
                   <div className="card-content">
+                    <Link to='/dakgalbi'>
                     <h2>Dak Galbi</h2>
+                    </Link>
                     <p>A Korean dish made by stir-frying marinated chicken pieces in a gochujang-based sauce with vegetables like cabbage, sweet potatoes, and rice cakes.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-17" />
@@ -1198,7 +1226,9 @@ const HomePage = () => {
                 <div className="card">
                   <img src={mochi} alt="Mochi" />
                   <div className="card-content">
+                    <Link to='/mochi'>
                     <h2>Mochi</h2>
+                    </Link>
                     <p>rice cake made from glutinous rice pounded into a sticky, chewy texture, it can be filled with fillings such as sweet red bean paste.</p>
                     <div className="like-button">
               <input type="checkbox" id="checkbox-18" />

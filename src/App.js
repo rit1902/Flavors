@@ -9,6 +9,22 @@ import Cremebrulee from './components/cremebrulee';
 import Request from './components/request';
 import RecipeDashboard from './components/recipedashboard';
 import AdminDashboard from './components/admindashboard';
+import Pannertikka from './components/pannertikka';
+import Biriyani from './components/biriyani';
+import Thandai from './components/thandai';
+import Soba from './components/soba';
+import Donburi from './components/donburi';
+import Dorayaki from './components/dorayaki';
+import Hargow from './components/hargow';
+import Kungpaochicken from './components/kungpaochicken';
+import Jasmintea from './components/jasmintea';
+import Arancini from './components/arancini';
+import BranzinnoalForno from './components/branzinnoalforno';
+import Tiramisu from './components/tiramisu';
+import Tteokbokki from './components/tteokbokki';
+import DakGalbi from './components/dakgalbi';
+import Mochi from './components/mochi';
+import AdminLogin from './components/adminlogin';
 
 
 function App() {
@@ -23,9 +39,25 @@ function App() {
           <Route path="/quichlorraine" element={<QuichLorraine />}/>
           <Route path="/ratatouille" element={<Ratatouille />}/>
           <Route path="/cremebrulee" element={<Cremebrulee />}/>
+          <Route path="/pannertikka" element={<Pannertikka />}/>
+          <Route path="/biriyani" element={<Biriyani />}/>
+          <Route path="/thandai" element={<Thandai />}/>
+          <Route path="/soba" element={<Soba />}/>
+          <Route path="/donburi" element={<Donburi />}/>
+          <Route path="/dorayaki" element={<Dorayaki />}/>
+          <Route path="/hargow" element={<Hargow />}/>
+          <Route path="/kungpaochicken" element={<Kungpaochicken />}/>
+          <Route path="/jasmintea" element={<Jasmintea />}/>
+          <Route path="/arancini" element={<Arancini />}/>
+          <Route path="/branzinnoalforno" element={<BranzinnoalForno />}/>
+          <Route path="/tiramisu" element={<Tiramisu />}/>
+          <Route path="/tteokbokki" element={<Tteokbokki />}/>
+          <Route path="/dakgalbi" element={<DakGalbi />}/>
+          <Route path="/mochi" element={<Mochi />}/>
           <Route path="/request" element={<Request />}/>
           <Route path="/recipedashboard" element={<RecipeDashboard />}/>
           <Route path="/admindashboard" element={<AdminDashboard />}/>
+          <Route path="/adminlogin" element={<AdminLogin />}/>
         </Routes>
       </Router>
     </div>

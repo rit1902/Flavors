@@ -1,0 +1,78 @@
+/************** 
+    Background css
+***************/
+.admin-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('C:\Users\Ritam Bhukta\flavors\src\assests\adminlogin.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+}
+
+/************** 
+    Form css
+***************/
+.admin-form {
+    width: 500px; /* Increased width for a wider form */
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(25, 25, 25, 0.8); /* Slight transparency */
+    border: none;
+    border-radius: 15px; /* Reduced border-radius for a squarer look */
+    text-align: center;
+}
+
+.admin-form__title {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.admin-form__input {
+    border: 2px solid #0097e6;
+    background: none;
+    display: block;
+    margin: 15px auto;
+    padding: 12px 40px;
+    width: 300px; /* Adjusted width of input fields */
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    transition: 250ms width ease, 250ms border-color ease;
+}
+
+.admin-form__input:hover {
+    width: 320px;
+}
+
+.admin-form__input:focus {
+    width: 340px;
+    border-color: #6fb98f;
+}
+
+.admin-form__submit {
+    border: 2px solid #2ecc71;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 12px 35px;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 200;
+    transition: 250ms background ease;
+}
+
+.admin-form__submit:hover {
+    background: #2ecc71;
+}

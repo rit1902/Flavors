@@ -139,7 +139,7 @@ const LoginSignup = () => {
 
                             <button type="submit">Sign In</button>
                             <br></br>
-                            <Link to='/admindashboard'><button type="submit">Admin Login</button></Link>
+                            <Link to='/adminlogin'><button type="submit">Admin Login</button></Link>
                         </form>
                     </div>
                     <div className="new-overlay-container">
