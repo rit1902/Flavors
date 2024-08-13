@@ -150,6 +150,7 @@ const HomePage = () => {
 
 
 <div className="hero-section">
+  <br></br>
         <h2>Welcome to FlavÖrs</h2>
         <p>Delicious recipes and guides you on how to cook them, making meal preparation easy and fun!</p>
         <button className="scroll-arrow" onClick={scrollDown}>
@@ -1298,9 +1299,9 @@ const HomePage = () => {
                         <a href="/employer">
                             <p>Employer</p>
                         </a>
-                        <a href="/healthplan">
+                        {/* <a href="/healthplan">
                             <p>health plan</p>
-                        </a>
+                        </a> */}
                         <a href="/individual">
                             <p>individual</p>
                         </a>
@@ -1319,6 +1320,7 @@ const HomePage = () => {
                         </a>
                         <a href="/contact">
                             <p>Contact us</p>
+                            <p>ritambhukta@gmail.com</p>
                         </a>
                         
                     </div>

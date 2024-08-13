@@ -95,9 +95,9 @@ function RecipeDashboard() {
         <h2>Admin Dashboard</h2>
         <ul>
           <Link to='/admindashboard'><li>Dashboard</li></Link>
-          <li>Recipes</li>
-          <li>Users</li>
-          <li>Settings</li>
+          <li>Manage Recipes</li>
+          <Link to='/users'><li>Users</li></Link>
+          {/* <li>Settings</li> */}
         </ul>
       </div>
       <div className="content">

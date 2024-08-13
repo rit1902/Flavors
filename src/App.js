@@ -25,6 +25,7 @@ import Tteokbokki from './components/tteokbokki';
 import DakGalbi from './components/dakgalbi';
 import Mochi from './components/mochi';
 import AdminLogin from './components/adminlogin';
+import Users from './components/users';
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
           <Route path="/recipedashboard" element={<RecipeDashboard />}/>
           <Route path="/admindashboard" element={<AdminDashboard />}/>
           <Route path="/adminlogin" element={<AdminLogin />}/>
+          <Route path="/users" element={<Users />}/>
         </Routes>
       </Router>
     </div>

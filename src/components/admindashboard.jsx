@@ -8,9 +8,9 @@ import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement } from 'chart.js';
 ChartJS.register(Title, Tooltip, Legend, ArcElement);
 
 function AdminDashboard() {
-  const usersCount = 120;
-  const cuisinesCount = 15;
-  const recipesCount = 30;
+  const usersCount = 6;
+  const cuisinesCount = 6;
+  const recipesCount = 18;
 
   const data = {
     labels: ['Users', 'Cuisines', 'Recipes'],
@@ -29,10 +29,10 @@ function AdminDashboard() {
       <div className="sidebar">
         <h2>Admin Dashboard</h2>
         <ul>
-          <li><Link to='/dashboard'>Dashboard</Link></li>
-          <li><Link to='/recipedashboard'>Recipes</Link></li>
+          <li>Dashboard</li>
+          <li><Link to='/recipedashboard'>Manage Recipes</Link></li>
           <li><Link to='/users'>Users</Link></li>
-          <li><Link to='/settings'>Settings</Link></li>
+          {/* <li><Link to='/settings'>Settings</Link></li> */}
         </ul>
       </div>
       <div className="content">

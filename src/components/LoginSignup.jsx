@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
-import { FaFacebook } from "react-icons/fa6";
-import { FaMeta } from "react-icons/fa6";
+import { FaFacebook, FaMeta } from "react-icons/fa6";
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "axios";
 import './LoginSignup.css';
@@ -29,23 +28,17 @@ const LoginSignup = () => {
         const signInButton = document.getElementById('signIn');
         const container = document.getElementById('container');
 
-        if (signUpButton && signInButton && container) {
-            signUpButton.addEventListener('click', () => {
-                container.classList.add("new-right-panel-active");
-            });
+        const handleSignUpClick = () => container.classList.add("new-right-panel-active");
+        const handleSignInClick = () => container.classList.remove("new-right-panel-active");
 
-            signInButton.addEventListener('click', () => {
-                container.classList.remove("new-right-panel-active");
-            });
+        if (signUpButton && signInButton && container) {
+            signUpButton.addEventListener('click', handleSignUpClick);
+            signInButton.addEventListener('click', handleSignInClick);
 
             // Cleanup event listeners on unmount
             return () => {
-                signUpButton.removeEventListener('click', () => {
-                    container.classList.add("new-right-panel-active");
-                });
-                signInButton.removeEventListener('click', () => {
-                    container.classList.remove("new-right-panel-active");
-                });
+                signUpButton.removeEventListener('click', handleSignUpClick);
+                signInButton.removeEventListener('click', handleSignInClick);
             };
         }
     }, []);
@@ -75,12 +68,13 @@ const LoginSignup = () => {
 
         axios.post('http://localhost:8080/api/flavors/create', signUpData)
             .then(response => {
-                console.log(response.data);
-                navigate('/homepage'); // Navigate to homepage on successful signup
+                console.log('Account created:', response.data);
+                navigate('/home'); // Navigate to homepage on successful signup
             })
             .catch(error => {
                 console.error("There was an error creating the account!", error);
-                setSignUpError('Error creating account');
+                const errorMessage = error.response?.data || 'Error creating account';
+                setSignUpError(errorMessage);
             });
     };
 
@@ -93,12 +87,13 @@ const LoginSignup = () => {
 
         axios.post('http://localhost:8080/api/flavors/login', signInData)
             .then(response => {
-                console.log(response.data);
+                console.log('Signed in:', response.data);
                 navigate('/homepage'); // Navigate to homepage on successful login
             })
             .catch(error => {
                 console.error("There was an error signing in!", error);
-                setSignInError('Invalid email or password');
+                const errorMessage = error.response?.data || 'Invalid email or password';
+                setSignInError(errorMessage);
             });
     };
 
@@ -134,11 +129,9 @@ const LoginSignup = () => {
                             <input type="email" placeholder="Email" name="emailId" value={signInData.emailId} onChange={handleSignInChange} />
                             <input type="password" placeholder="Password" name="password" value={signInData.password} onChange={handleSignInChange} />
                             {signInError && <p className="new-error">{signInError}</p>}
-                            {/* <a href="#">Forgot your password?</a> */}
-                            <br></br>
-
+                            <br />
                             <button type="submit">Sign In</button>
-                            <br></br>
+                            <br />
                             <Link to='/adminlogin'><button type="submit">Admin Login</button></Link>
                         </form>
                     </div>

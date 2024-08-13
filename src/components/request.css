@@ -1,17 +1,32 @@
+
+
 .custom-form-wrapper {
-  /* background-image: url('/src/assests/request.jpg');  */
+  /* background-image: url('/src/assets/request.jpg');  */
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 20px;
   border-radius: 10px;
   max-width: 500px;
   margin: auto;
   color: #fff;
+  min-height: 100vh; /* Ensures the wrapper takes up at least the full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .custom-form-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 100%;
+  max-width: 500px; /* Keeps the form's width within a limit */
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Frosty border */
 }
 
 .custom-input, .custom-textarea {
