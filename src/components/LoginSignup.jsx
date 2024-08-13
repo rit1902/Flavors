@@ -69,7 +69,7 @@ const LoginSignup = () => {
         axios.post('http://localhost:8080/api/flavors/create', signUpData)
             .then(response => {
                 console.log('Account created:', response.data);
-                navigate('/home'); // Navigate to homepage on successful signup
+                navigate('/homepage'); // Navigate to homepage on successful signup
             })
             .catch(error => {
                 console.error("There was an error creating the account!", error);
