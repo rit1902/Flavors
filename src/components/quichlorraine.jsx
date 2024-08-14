@@ -40,7 +40,7 @@ const Cremebrulee = () => {
         </div>
       </div>
       <div className="recipe-text1">
-        <h1>Quich Lorraine</h1>
+        <h1>Quiche Lorraine</h1>
         <p>
         A classic and sophisticated dish, Quiche Lorraine is perfect for any occasion. This savory pie features a rich, creamy custard base with bacon and cheese, baked to perfection in a flaky crust. The combination of flavors and textures makes it an irresistible treat.</p>
       </div>

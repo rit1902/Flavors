@@ -54,7 +54,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(0deg, #00000088 30%, #ffffff0f 80%);
+  background: linear-gradient(0deg, #0000005c 30%, #ffffff0f 80%);
   color: #ffffff;
   z-index: 10; /* Ensure it appears above the video */
   animation: fadeIn 2s ease-in-out; /* Fade-in effect */
@@ -152,7 +152,8 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: linear-gradient(0deg, #000000ba 30%, #ffffff12 80%);  
 }
 
 
@@ -161,12 +162,14 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
   color:#ff3030 ;
   font-size: 1.8em;
   margin-top: -240px;
+  font-style: italic;
 
 }
 .video-text
 {
   color:white;
   font-size: 1.5em;
+  font-style: italic;
 
 }
 

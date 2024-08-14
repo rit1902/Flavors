@@ -180,7 +180,7 @@ const HomePage = () => {
                   <img src={quichlorraine} alt="Quich Lorraine" />
                   <div className="card-content">
                     <Link to="/quichlorraine">
-                    <h2>Quich Lorraine</h2>
+                    <h2>Quiche Lorraine</h2>
                     </Link>
                     <p>A savory French tart filled with a rich custard made from eggs, cream.The creamy filling is complemented by the smoky flavor of crispy bacon and the nutty richness of Gruyère cheese.</p>
                     
