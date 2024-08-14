@@ -11,6 +11,14 @@
     background-size: cover;
 }
 
+.admin-form__error {
+    color: #e74c3c; /* Red color for the error message */
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
 /************** 
     Form css
 ***************/

@@ -130,7 +130,7 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* <div className="video">
+      <div className="video">
     <ReactPlayer 
         ref={playerRef}
         url={video} 
@@ -142,13 +142,17 @@ const HomePage = () => {
         onProgress={handleProgress}
     />
     <div className="video-overlay">
+    <h2 className='videotext'>Welcome to FlavÖrs</h2>
         <p className="video-text">Delicious recipes and guides you on how to cook them, making meal preparation easy and fun!</p>
+        <button className="scroll-arrow" onClick={scrollDown}>
+          ↓
+        </button>
     </div>
-</div> */}
+</div>
 
 {/* // Hero Section Component */}
 
-
+{/* 
 <div className="hero-section">
   <br></br>
         <h2>Welcome to FlavÖrs</h2>
@@ -163,7 +167,7 @@ const HomePage = () => {
       <source src={video} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-  </div>
+  </div> */}
 
       
         <div className="App">
