@@ -18,7 +18,10 @@ const Soba = () => {
         .catch((error) => console.log('Error sharing', error));
     } else {
       // Fallback for browsers that do not support the Web Share API
-      alert('Sharing is not supported in this browser.');
+      const shareUrl = window.location.href;
+      navigator.clipboard.writeText(shareUrl)
+        .then(() => alert('Link copied to clipboard. You can share it manually!'))
+        .catch(() => alert('Failed to copy the link. Please copy it manually: ' + shareUrl));
     }
   };
 

@@ -10,7 +10,7 @@ const Jasmintea = () => {
     if (navigator.share) {
       navigator
         .share({
-          title: 'Jasmin Tea Recipe',
+          title: 'Jasmine Tea Recipe',
           text: 'Check out this simple and delicious Jasmin Tea recipe!',
           url: window.location.href,
         })
@@ -18,7 +18,10 @@ const Jasmintea = () => {
         .catch((error) => console.log('Error sharing', error));
     } else {
       // Fallback for browsers that do not support the Web Share API
-      alert('Sharing is not supported in this browser.');
+      const shareUrl = window.location.href;
+      navigator.clipboard.writeText(shareUrl)
+        .then(() => alert('Link copied to clipboard. You can share it manually!'))
+        .catch(() => alert('Failed to copy the link. Please copy it manually: ' + shareUrl));
     }
   };
 
@@ -37,7 +40,7 @@ const Jasmintea = () => {
         </div>
       </div>
       <div className="recipe-text1">
-        <h1>Jasmin Tea</h1>
+        <h1>Jasmine Tea</h1>
         <p>
         A soothing and aromatic beverage, Jasmine Tea is a fragrant delight that embodies elegance and calm. This classic tea features high-quality green or white tea leaves infused with the delicate scent of jasmine flowers. The gentle, floral aroma and subtle, refreshing flavor create a serene drinking experience, making Jasmine Tea a cherished choice for moments of relaxation and tranquility.
         </p>
